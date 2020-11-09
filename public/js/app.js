@@ -2,11 +2,13 @@ let newLineSeparator = ''
 
 function remove() {
   let text = document.getElementById('text').value
-  document.getElementById('output').innerHTML = text.replace(
-    /(\r\n|\n|\r)/gm,
-    newLineSeparator
-  )
-  document.getElementById('copy-btn').style.display = 'block'
+
+  if(text) {
+    document.getElementById('output').innerHTML = text.replace(
+      /(\r\n|\n|\r)/gm,
+      newLineSeparator
+    )
+  }
 }
 
 function toggleNewLineProp(checkbox) {
@@ -14,7 +16,7 @@ function toggleNewLineProp(checkbox) {
 }
 
 function copyToClipboard() {
-  var range = document.createRange()
+  let range = document.createRange()
   range.selectNode(document.getElementById('output'))
   window.getSelection().removeAllRanges()
   window.getSelection().addRange(range)
