@@ -1,8 +1,17 @@
+body {
+  color: #464343;
+  background: #eaeaea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #header {
   width: 100%;
   height: 50px;
   text-align: center;
-  margin-top: 25px;
+  margin: 25px 0px;
+}
+.app-title {
+  margin-bottom: 5px;
 }
 
 #sidebar-left {
@@ -34,18 +43,17 @@
 }
 
 textarea {
-  width: 90%;
+  width: 100%;
   height: 40%;
   margin: 10px 0px;
   padding: 10px;
 }
 
 #output {
-  width: 90%;
+  width: 100%;
   min-height: 200px;
-  margin: 10px 0px;
+  margin: 15px 0px;
   padding: 5px;
-  border-radius: 7px;
 }
 
 button.btn {
