@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Remove Line Breaks and New Lines Online</title>
+  </head>
+  <body>
+    <div id="header">
+      <h2>Remove Line Breaks / New Lines Online!</h2>
+    </div>
+    <div id="sidebar-left"></div>
+    <div id="main">
+      Enter your text here
+      <textarea id="text" rows="6"></textarea>
+      <br />
+      <div>
+        <button class="btn" onclick="remove()">Remove Line Breaks / New Lines</button>
+        <input type="checkbox" id="newLinePropCB" onclick='toggleNewLineProp(this);' />
+        <label for="newLinePropCB" class="prop-label"> Convert new lines to spaces</label><br />
+      </div>
+
+      <div id="output-container" style="position: relative;">
+        <div class="alert d-none" id="copied">Copied to clipboard</div>
+        <button title="Copy to clipboard" id="copy-btn" class="d-none" onclick="copyToClipboard()">&#x2398</button>
+        <div id="output"></div>
+      </div>
+      
+    </div>
+    <div id="sidebar-right">A minimal tool to remove line breaks and new lines <3</div>
+    <div id="footer">
+      <span title="Sri Lanka">🇱🇰</span>
+      <span title="lots of love">❤️</span>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
